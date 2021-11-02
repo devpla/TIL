@@ -1,6 +1,7 @@
 # Dependencies
 /node_modules
 
+ssh.txt
 ./build/
 
 # Generated files
