@@ -1,4 +1,4 @@
-name: Update algolia indices
+name: algolia
 
 on:
   push:
