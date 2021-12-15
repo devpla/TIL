@@ -35,7 +35,7 @@ const config = {
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
-    ({
+    {
       algolia: {
         // 알골리아에서 appId를 제공하지 않았다면 'BH4D9OD16A' 코드를 사용하세요.
         appId: "P19FK0A5FI",
@@ -121,7 +121,24 @@ const config = {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       },
-    }),
+      colorMode: {
+        switchConfig: {
+          // Icon for the switch while in dark mode
+          darkIcon: "light_mode",
+
+          // CSS to apply to dark icon
+          darkIconStyle: {
+            fontFamily: "Material Icons",
+          },
+
+          lightIcon: "dark_mode",
+
+          lightIconStyle: {
+            fontFamily: "Material Icons",
+          },
+        },
+      },
+    },
 };
 
 module.exports = config;
