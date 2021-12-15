@@ -16,6 +16,8 @@
   --ifm-color-primary-lighter: rgb(102, 212, 189);
   --ifm-color-primary-lightest: rgb(146, 224, 208);
   --ifm-code-font-size: 90%;
+  --ifm-font-family-monospace: Menlo, Monaco, Consolas, "Liberation Mono",
+    "Courier New";
 }
 
 .docusaurus-highlight-code-line {
@@ -46,7 +48,8 @@ h5 {
 pre,
 pre code,
 code {
-  font-family: "Roboto Mono", Pretendard, monospace !important;
+  font-family: var(--ifm-font-family-monospace), Roboto Mono, Pretendard,
+    monospace !important;
 }
 
 code {
@@ -181,4 +184,8 @@ ul ul .table-of-contents__link {
   border-left-color: var(--ifm-menu-color-active);
   color: var(--ifm-menu-color-active);
   font-weight: var(--ifm-font-weight-semibold);
+}
+
+span .token {
+  font-style: normal !important;
 }
