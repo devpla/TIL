@@ -113,6 +113,10 @@ table {
   transition: none !important;
 }
 
+.DocSearch-Button .DocSearch-Search-Icon {
+  color: var(--ifm-color-emphasis-700) !important;
+}
+
 .DocSearch-Button-Placeholder {
   display: none;
 }
