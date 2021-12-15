@@ -5,6 +5,8 @@
  */
 
 /* You can override the default Infima variables here. */
+@import "patches.css";
+
 :root {
   --ifm-color-primary: #25c2a0;
   --ifm-color-primary-dark: rgb(33, 175, 144);
@@ -13,7 +15,7 @@
   --ifm-color-primary-light: rgb(70, 203, 174);
   --ifm-color-primary-lighter: rgb(102, 212, 189);
   --ifm-color-primary-lightest: rgb(146, 224, 208);
-  --ifm-code-font-size: 95%;
+  --ifm-code-font-size: 90%;
 }
 
 .docusaurus-highlight-code-line {
@@ -23,19 +25,28 @@
   padding: 0 var(--ifm-pre-padding);
 }
 
-html[data-theme='dark'] .docusaurus-highlight-code-line {
+html[data-theme="dark"] .docusaurus-highlight-code-line {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 
-body, h1, h2, h3, h4, h5 {
+body,
+h1,
+h2,
+h3,
+h4,
+h5 {
   font-family: Pretendard, sans-serif;
 }
 
-pre, pre code, code {
-  font-family: 'Roboto Mono', Pretendard, monospace !important;
+pre,
+pre code,
+code {
+  font-family: "Roboto Mono", Pretendard, monospace !important;
 }
 
 code {
@@ -56,15 +67,93 @@ strong code {
   background: none;
 }
 
-html[data-theme='dark'] strong {
-    box-shadow: inset 0 -0.6em 0 0 #1A887080;
+html[data-theme="dark"] strong {
+  box-shadow: inset 0 -0.6em 0 0 #1a887080;
 }
 
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
 
 h4 {
-font-size: 1.25rem;
+  font-size: 1.2rem;
 }
 
 h5 {
-font-size: 1rem;
+  font-size: 1rem;
+}
+
+table {
+  display: table;
+  width: 100%;
+}
+
+.navbar {
+  font-family: "Mulish";
+}
+
+.navbar__item {
+  margin-left: 1rem;
+}
+
+.navbar__link {
+  color: var(--ifm-color-emphasis-700);
+}
+
+.docSidebarContainer_node_modules-\@docusaurus-theme-classic-lib-next-theme-DocPage-styles-module {
+  border-right: 1px solid var(--ifm-color-emphasis-100) !important;
+}
+
+.menu {
+  font-weight: var(--ifm-font-weight-normal);
+  font-size: 0.95rem;
+  padding-top: 1rem !important;
+}
+
+.dropdown > .navbar__link:after,
+.menu__link--sublist:after {
+  content: "expand_more";
+  font-family: "Material Icons";
+  font-size: 1.25rem;
+}
+
+.markdown {
+  margin: 2rem 3rem;
+}
+
+.table-of-contents,
+.table-of-contents li,
+.table-of-contents ul,
+.table-of-contents__left-border {
+  border: none;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.table-of-contents__link {
+  border-left: 1px solid var(--ifm-color-emphasis-200);
+  display: inline-block;
+  padding: 0.25rem 1rem;
+  color: var(--ifm-color-emphasis-700);
+  transition-property: border-color, color;
+  transition-duration: var(--ifm-transition-slow);
+  transition-timing-function: var(--ifm-transition-timing-default);
+}
+
+ul ul .table-of-contents__link {
+  padding-left: 2rem;
+}
+
+.table-of-contents__link--active {
+  border-left-color: var(--ifm-menu-color-active);
+  color: var(--ifm-menu-color-active);
+  font-weight: var(--ifm-font-weight-semibold);
 }
