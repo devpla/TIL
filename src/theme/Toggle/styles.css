@@ -10,7 +10,7 @@
   background-color: var(--ifm-color-emphasis-200);
   transition: all var(--ifm-transition-fast)
     var(--ifm-transition-timing-default);
-  margin-left: 1rem;
+  margin-left: 2rem;
   margin-right: 1rem;
 }
 
