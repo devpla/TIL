@@ -76,6 +76,7 @@ html[data-theme="dark"] strong {
 
 h1 {
   font-size: 2.5rem;
+  font-family: "Mulish", Pretendard;
 }
 
 h2 {
@@ -142,6 +143,7 @@ table {
 
 .menu {
   font-weight: var(--ifm-font-weight-normal);
+  font-family: "Mulish", Pretendard;
   font-size: 0.95rem;
   padding-top: 1rem !important;
 }
