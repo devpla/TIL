@@ -141,6 +141,10 @@ table {
   border-right: 1px solid var(--ifm-color-emphasis-100) !important;
 }
 
+.docSidebarContainer_3Kbt {
+  border-right: 1px solid var(--ifm-color-emphasis-100) !important;
+}
+
 .menu {
   font-weight: var(--ifm-font-weight-normal);
   font-family: "Mulish", Pretendard;
@@ -173,7 +177,7 @@ table {
   display: inline-block;
   padding: 0.25rem 1rem;
   color: var(--ifm-color-emphasis-700);
-  transition-property: border-color, color;
+  transition-property: color;
   transition-duration: var(--ifm-transition-slow);
   transition-timing-function: var(--ifm-transition-timing-default);
 }
