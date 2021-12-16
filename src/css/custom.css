@@ -195,3 +195,12 @@ ul ul .table-of-contents__link {
 span .token {
   font-style: normal !important;
 }
+
+.hero__title {
+  font-size: 4rem;
+  margin-top: 6rem;
+}
+
+.hero__subtitle {
+  margin-bottom: 3rem;
+}
