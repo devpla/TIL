@@ -20,7 +20,7 @@ function HomepageHeader() {
         </div>
       </div>
       <div className="container__right">
-        <img src="../../static/img/landing.png" />
+        <img src="https://github.com/devpla/frontend/blob/main/static/img/landing.png?raw=true" />
       </div>
     </header>
   );
