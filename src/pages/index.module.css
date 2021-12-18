@@ -11,7 +11,7 @@
   max-width: 966px;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 997px) {
   .heroBanner {
     padding: 2rem;
     text-align: center;
@@ -24,7 +24,7 @@
   }
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 997px) {
   .heroBanner {
     display: grid;
     grid-template-columns: 1fr 1fr;
