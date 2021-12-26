@@ -78,11 +78,11 @@ const config = {
             label: "CS",
             to: "docs/CS/intro",
           },
-          {
-            position: "left",
-            label: "Etc",
-            items: [{ label: "infra", to: "..." }],
-          },
+          // {
+          //   position: "left",
+          //   label: "Etc",
+          //   items: [{ label: "infra", to: "docs/etc/infra" }],
+          // },
           {
             href: "https://github.com/devpla/TIL",
             label: "GitHub",
