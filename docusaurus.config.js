@@ -14,7 +14,7 @@ const config = {
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.png",
   organizationName: "devpla", // Usually your GitHub org/user name.
-  projectName: "frontend", // Usually your repo name.
+  projectName: "TIL", // Usually your repo name.
 
   presets: [
     [
@@ -24,7 +24,7 @@ const config = {
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
-          // editUrl: "https://github.com/devpla/frontend/",
+          // editUrl: "https://github.com/devpla/TIL/",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
@@ -84,7 +84,7 @@ const config = {
             items: [{ label: "infra", to: "..." }],
           },
           {
-            href: "https://github.com/devpla/frontend",
+            href: "https://github.com/devpla/TIL",
             label: "GitHub",
             position: "right",
           },

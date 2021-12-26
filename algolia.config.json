@@ -1,7 +1,7 @@
 {
   "index_name": "frontend",
-  "start_urls": ["https://devpla.github.io/frontend/"],
-  "sitemap_urls": ["https://devpla.github.io/frontend/sitemap.xml"],
+  "start_urls": ["https://devpla.github.io/TIL/"],
+  "sitemap_urls": ["https://devpla.github.io/TIL/sitemap.xml"],
   "sitemap_alternate_links": true,
   "stop_urls": ["/tests"],
   "selectors": {
