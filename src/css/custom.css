@@ -8,13 +8,13 @@
 @import "patches.css";
 
 :root {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: rgb(33, 175, 144);
-  --ifm-color-primary-darker: rgb(31, 165, 136);
-  --ifm-color-primary-darkest: rgb(26, 136, 112);
-  --ifm-color-primary-light: rgb(70, 203, 174);
-  --ifm-color-primary-lighter: rgb(102, 212, 189);
-  --ifm-color-primary-lightest: rgb(146, 224, 208);
+  --ifm-color-primary: #8389e0;
+  --ifm-color-primary-dark: #6264d6;
+  --ifm-color-primary-darker: #5d56d8;
+  --ifm-color-primary-darkest: #433ba0;
+  --ifm-color-primary-light: #818cf8;
+  --ifm-color-primary-lighter: #a5b4fc;
+  --ifm-color-primary-lightest: #c7d2fe;
   --ifm-code-font-size: 90%;
   --ifm-font-family-monospace: Menlo, Monaco, Consolas, "Liberation Mono",
     "Courier New";
@@ -32,7 +32,7 @@ html[data-theme="dark"] .docusaurus-highlight-code-line {
 }
 
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
-@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 
@@ -58,7 +58,7 @@ code {
 }
 
 strong {
-  box-shadow: inset 0 -0.6em 0 0 #25c2a030;
+  box-shadow: inset 0 -0.6em 0 0 #e3e5ff;
 }
 
 strong a {
@@ -71,7 +71,7 @@ strong code {
 }
 
 html[data-theme="dark"] strong {
-  box-shadow: inset 0 -0.6em 0 0 #1a887080;
+  box-shadow: inset 0 -0.6em 0 0 #312e81;
 }
 
 h1 {
@@ -197,10 +197,25 @@ span .token {
 }
 
 .hero__title {
+  font-weight: 700;
+  font-size: 4.7rem;
+  margin-top: 4.7rem;
+}
+
+.hero__title__bottom {
+  font-weight: 400;
   font-size: 4rem;
-  margin-top: 6rem;
+  margin-top: -1rem;
+  margin-bottom: 1.5rem;
+  margin-left: 0.5rem;
 }
 
 .hero__subtitle {
+  margin-left: 0.5rem;
   margin-bottom: 3rem;
+  font-size: 1.1rem;
+}
+
+.hero__button {
+  margin-left: 0.5rem;
 }

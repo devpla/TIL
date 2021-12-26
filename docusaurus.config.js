@@ -6,13 +6,13 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "Frontend",
-  tagline: "프론트엔드 장인이 되자!",
+  title: "Today I Learned",
+  tagline: "프론트엔드 장인이 되는 그날까지 🤗",
   url: "https://devpla.github.io",
   baseUrl: "/frontend/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
-  favicon: "img/favicon.ico",
+  favicon: "img/favicon.png",
   organizationName: "devpla", // Usually your GitHub org/user name.
   projectName: "frontend", // Usually your repo name.
 
@@ -24,7 +24,7 @@ const config = {
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
-          editUrl: "https://github.com/facebook/docusaurus/edit/main/website/",
+          // editUrl: "https://github.com/devpla/frontend/",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
@@ -57,20 +57,34 @@ const config = {
         //... 다른 알골리아 파라미터
       },
       navbar: {
-        title: "Frontend",
+        title: "Today I Learned",
         logo: {
           alt: "My Site Logo",
           src: "img/logo.png",
         },
         items: [
           {
-            type: "doc",
-            docId: "intro",
             position: "left",
-            label: "Docs",
+            label: "Frontend",
+            to: "docs/frontend/intro",
           },
           {
-            href: "https://github.com/facebook/docusaurus",
+            position: "left",
+            label: "Backend",
+            to: "docs/backend/intro",
+          },
+          {
+            position: "left",
+            label: "CS",
+            to: "docs/CS/intro",
+          },
+          {
+            position: "left",
+            label: "Etc",
+            items: [{ label: "infra", to: "..." }],
+          },
+          {
+            href: "https://github.com/devpla/frontend",
             label: "GitHub",
             position: "right",
           },
@@ -83,25 +97,20 @@ const config = {
             title: "Docs",
             items: [
               {
-                label: "Tutorial",
-                to: "/docs/intro",
-              },
-            ],
-          },
-          {
-            title: "Community",
-            items: [
-              {
-                label: "Stack Overflow",
-                href: "https://stackoverflow.com/questions/tagged/docusaurus",
+                label: "Frontend",
+                to: "/docs/frontend",
               },
               {
-                label: "Discord",
-                href: "https://discordapp.com/invite/docusaurus",
+                label: "Backend",
+                to: "/docs/backend",
               },
               {
-                label: "Twitter",
-                href: "https://twitter.com/docusaurus",
+                label: "CS",
+                to: "/docs/CS",
+              },
+              {
+                label: "Etc",
+                to: "/docs/etc",
               },
             ],
           },
@@ -110,12 +119,16 @@ const config = {
             items: [
               {
                 label: "GitHub",
-                href: "https://github.com/facebook/docusaurus",
+                href: "https://github.com/devpla/",
+              },
+              {
+                label: "Blog",
+                href: "https://hing9u.tistory.com/",
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright ${new Date().getFullYear()} Devpla. Built with Docusaurus💜`,
       },
       prism: {
         theme: lightCodeTheme,
