@@ -9,7 +9,7 @@ const config = {
   title: "Today I Learned",
   tagline: "프론트엔드 장인이 되는 그날까지 🤗",
   url: "https://devpla.github.io",
-  baseUrl: "/",
+  baseUrl: "/TIL/",
   onBrokenLinks: "ignore",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.png",
