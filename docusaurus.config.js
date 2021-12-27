@@ -65,7 +65,7 @@ const config = {
         items: [
           {
             position: "left",
-            label: "docs",
+            label: "Frontend",
             to: "docs/frontend/intro",
           },
           {
