@@ -6,4 +6,4 @@
 
 <br/>
 
-- Github Action 너무 힘들어 😥
+- Docusaurus + Github Action = 💜
