@@ -10,7 +10,7 @@ const config = {
   tagline: "프론트엔드 장인이 되는 그날까지 🤗",
   url: "https://devpla.github.io",
   baseUrl: "/TIL/",
-  onBrokenLinks: "ignore",
+  // onBrokenLinks: "ignore",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.png",
   organizationName: "devpla", // Usually your GitHub org/user name.
@@ -65,7 +65,7 @@ const config = {
         items: [
           {
             position: "left",
-            label: "Frontend",
+            label: "docs",
             to: "docs/frontend/intro",
           },
           {
@@ -78,11 +78,11 @@ const config = {
             label: "CS",
             to: "docs/CS/intro",
           },
-          // {
-          //   position: "left",
-          //   label: "Etc",
-          //   items: [{ label: "infra", to: "docs/etc/infra" }],
-          // },
+          {
+            position: "left",
+            label: "Etc",
+            items: [{ label: "infra", to: "docs/etc/infra/intro" }],
+          },
           {
             href: "https://github.com/devpla/TIL",
             label: "GitHub",
@@ -98,19 +98,19 @@ const config = {
             items: [
               {
                 label: "Frontend",
-                to: "/docs/frontend",
+                to: "/docs/frontend/intro",
               },
               {
                 label: "Backend",
-                to: "/docs/backend",
+                to: "/docs/backend/intro",
               },
               {
                 label: "CS",
-                to: "/docs/CS",
+                to: "/docs/CS/intro",
               },
               {
                 label: "Etc",
-                to: "/docs/etc",
+                to: "/docs/etc/intro",
               },
             ],
           },
