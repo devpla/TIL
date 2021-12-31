@@ -24,7 +24,13 @@ function HomepageHeader() {
         </div>
       </div>
       <div className="container__right">
-        <img src="https://github.com/devpla/TIL/blob/main/static/img/landing.png?raw=true" />
+        <iframe
+          src="https://tender-austin-ec58ee.netlify.app/"
+          frameborder="0"
+          width="100%"
+          height="700"
+        ></iframe>
+        {/* <img src="https://github.com/devpla/TIL/blob/main/static/img/landing.png?raw=true" /> */}
       </div>
     </header>
   );
@@ -34,7 +40,7 @@ export default function Home() {
   const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
+      title={siteConfig.title}
       description="Description will go into a meta tag in <head />"
     >
       <HomepageHeader />
