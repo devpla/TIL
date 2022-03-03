@@ -1,38 +1,8 @@
 import React from "react";
-import clsx from "clsx";
 import Layout from "@theme/Layout";
-import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
-import styles from "./index.module.css";
 
-function HomepageHeader() {
-  const { siteConfig } = useDocusaurusContext();
-  return (
-    <header className={clsx(styles.heroBanner)}>
-      <div className="container__left">
-        <h1 className="hero__title">Today</h1>
-        <h1 className="hero__title__bottom">I Learned</h1>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          <Link
-            className="button button--primary button--lg hero__button"
-            to="/docs/frontend/intro"
-          >
-            Get Started
-          </Link>
-        </div>
-      </div>
-      <div className="container__right">
-        <iframe
-          src="https://devpla-airplain.netlify.app/"
-          frameBorder="0"
-          width="100%"
-          height="700"
-        ></iframe>
-      </div>
-    </header>
-  );
-}
+import { HomepageHeader } from "../components";
 
 export default function Home(): JSX.Element {
   const { siteConfig } = useDocusaurusContext();
@@ -42,9 +12,6 @@ export default function Home(): JSX.Element {
       description="Description will go into a meta tag in <head />"
     >
       <HomepageHeader />
-      {/* <main>
-        <HomepageFeatures />
-      </main> */}
     </Layout>
   );
 }
