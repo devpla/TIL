@@ -1,9 +1,19 @@
 import React, { useState, useRef, memo } from "react";
-import PropTypes from "prop-types";
 import { useThemeConfig } from "@docusaurus/theme-common";
 import useIsBrowser from "@docusaurus/useIsBrowser";
 import clsx from "clsx";
-import "./styles.css";
+import "./Toggle.styles.css";
+
+type IsChecked = "unchecked" | "checked";
+
+interface ToggleProps {
+  className: string;
+  styles: Record<IsChecked, any>;
+  icons: Record<IsChecked, string>;
+  checked: boolean;
+  disabled: boolean;
+  onChange: () => void;
+}
 
 const ToggleMemo = memo(
   ({
@@ -13,7 +23,7 @@ const ToggleMemo = memo(
     checked: defaultChecked,
     disabled,
     onChange,
-  }) => {
+  }: ToggleProps) => {
     const [checked, setChecked] = useState(defaultChecked);
     const [focused, setFocused] = useState(false);
     const inputRef = useRef(null);
@@ -63,20 +73,6 @@ const ToggleMemo = memo(
 );
 
 ToggleMemo.displayName = "ToggleMemo";
-ToggleMemo.propTypes = {
-  className: PropTypes.string,
-  styles: PropTypes.shape({
-    unchecked: PropTypes.any,
-    checked: PropTypes.any,
-  }),
-  icons: PropTypes.shape({
-    unchecked: PropTypes.string,
-    checked: PropTypes.string,
-  }),
-  checked: PropTypes.bool,
-  disabled: PropTypes.bool,
-  onChange: PropTypes.func,
-};
 
 export default function Toggle(props) {
   const {
